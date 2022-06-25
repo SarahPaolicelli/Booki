@@ -1,6 +1,7 @@
 body{
     font-family: "Raleway",sans-serif;
     margin-left: 10px;
+    font-size: medium;
     }
 nav{
     display: flex;
@@ -15,23 +16,17 @@ nav li{
     margin-right: 10px;
     }
 .lienav{
-    text-decoration: none;
+    text-decoration-line: none;
     color: black;
     }
 .lienav:hover{
     text-decoration-line:overline;
     text-decoration-color:#0065FC;
-    color:#0065FC
+    color:#0065FC;
     }
 input{
     margin-right: 0px;
     font-weight: bold;
-    }
-wrapper {
-	width: 2500px;
-    margin: 10px;
-    }
-input{
     padding: 5px;
     border: none;
     }
@@ -50,11 +45,12 @@ input{
     }
 .button2{
     border-radius: 30px;
-    padding:5px;
+    padding: 5px;
     font-weight: bold;
     border-color: #F2F2F2;
     background-color: white;
     cursor: pointer;
+    margin-right: 15px;
     }
 .icone2{
     background-color: #deebff;
@@ -76,7 +72,17 @@ input{
 
 @media all and (max-width:768px)
     {
-     nav{
+    H1{
+        font-size: 150%;
+    }
+    nav{
+        display: flex;
         flex-direction: column;
-        }   
+        }
+    .lienav:hover{
+        text-decoration-line:underline;
+        text-decoration-color:#0065FC;
+        color:#0065FC
+        }
+  
     }
