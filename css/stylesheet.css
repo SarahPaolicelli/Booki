@@ -1,81 +1,126 @@
+/*general*/
 body{
     font-family: "Raleway",sans-serif;
-    margin-left: 10px;
-    font-size: medium;
+    margin-left: 50px;
+    margin-top: 40px;
     }
+h1{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+p{
+    margin-top: 6px;
+    font-size: 14px;
+}
+/*header*/
+.logo{
+    margin-left: 12px;
+    height:40px;}
 nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     }
 nav ul{
-    display: flex;
+    display: flex; 
     list-style: none;
     }
 nav li{
-    margin-right: 10px;
+    display: flex;
+    margin: auto;
+    align-items: flex-start;
+    margin-right: 50px;
+    /*padding-top: 50px; */
     }
+nav li:hover{
+    border-top:2px solid #0065FC;
+}
+
 .lienav{
     text-decoration-line: none;
     color: black;
     }
-.lienav:hover{
-    text-decoration-line:overline;
-    text-decoration-color:#0065FC;
-    color:#0065FC;
-    }
+/*barre de recherche*/
 input{
     margin-right: 0px;
     font-weight: bold;
-    padding: 5px;
+    padding: 8px;
     border: none;
     }
-.icone1{
+
+.iconegps{
     background-color: #F2F2F2;
-    border-radius: 10px 0 0 10px;
-    padding: 9px;
+    border-radius: 15px 0 0 15px;
+    padding: 16px;
     }
-.button1{
+.buttonrecherche{
     background-color: #0065FC;
     color: aliceblue;
     cursor: pointer;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 15px 15px 0;
     border-color: #0065FC;
-    padding: 8px;
+    padding: 10px;
     }
-.buttonx{
+.buttonloupe{
     display:none;
     }
+/*filtre*/
+.filtre{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
 .titre{
     font-weight: bold;
     padding-right: 10px;
+    margin-right: 15px;
     }
-.button2{
+.buttonfiltre{
     border-radius: 30px;
-    padding: 3px;
+    font-size: 15px;
     font-weight: bold;
     border-color: #F2F2F2;
     background-color: white;
     cursor: pointer;
-    margin-right: 10px;
-    padding-right: 18px;
+    margin-right: 15px;
+    padding-right: 22px;
+    padding-left: 18px;
     }
-.icone2{
+.iconefiltre{
     background-color: #deebff;
     border-radius: 30px;
     padding: 15px;
     position: relative;
-    right: 12px;
+    right: 26px;
     color: #0065FC;
     }
-.button2:hover{
+.buttonfiltre:hover{
     background-color:#0065FC;
     }
-.icone3{
-    color: #0065FC;
+.iconeinfo{
+    height: 25px;
+    position: relative;
+    top:7px;
     }
 
 /*Card "Hébergements à Marseille*/
+.card {
+    width: 100px;
+    height: 5px;
+   
+}
+.card-image{
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.card-image img{
+    width: 150%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 
 /* media queries */
@@ -114,7 +159,7 @@ input{
         text-decoration-color:#0065FC;
         color:#0065FC
     }
-    .buttonx{
+    .buttonloupe{
         display:inline;
         background-color: #0065FC;
         color: aliceblue;
@@ -123,7 +168,7 @@ input{
         border-color: #0065FC;
         padding: 8px;
     }
-    .button1{
+    .buttonrecherche{
         display: none;
     }
     .filtre{
