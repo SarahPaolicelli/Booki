@@ -134,14 +134,16 @@
     border-radius: 15px;
     padding: 20px 35px 20px 35px;
     margin-top: 30px;
+    width:720px;
     }
 
 /*Card Hébergements à Marseille*/
 
     .lescards{
         display: flex;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;  
+        justify-content: space-between;
+        align-content: space-around;      
     }
     .card{
     width: 215px;
