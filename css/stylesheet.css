@@ -127,14 +127,21 @@
     top:7px;
     }
 
-/*Card "Hébergements à Marseille*/
-    .heberg{
+/*Section Hébergements à Marseille */
+    section{
     background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 20px 35px 20px 35px;
+    margin-top: 30px;
     }
+
+/*Card Hébergements à Marseille*/
     .card{
-    width: 200px;
-    height: 15px;
-    Border: solid 4px white;
+    width: 215px;
+    height:170px;
+    background-color: white;
+    overflow: hidden;
+    Border: solid 5px white;
     border-radius: 15px;
     }
     .card-img{
@@ -143,9 +150,18 @@
     overflow: hidden;
     }
     .card-img img{
-    width: 100%;
-    position: absolute;
+        width: 100%;
+
     }
+    .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .card-body {
+    padding: 2px;
+    
+    }
+
+
 
 /* media queries */
 
