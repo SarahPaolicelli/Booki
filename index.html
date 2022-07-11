@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/02917762d3.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/stylesheet.css">
@@ -15,7 +15,7 @@
         <header>
             <nav>
                 <img src="./assets/Booki.png" alt="logo booki" class="logo">
-                <ul>
+                <ul class="menu">
                     <li><a href="#heberg" class="lienav">Hébergements</a></li>
                     <li><a href="#acti" class="lienav">Activités</a></li>
                 </ul>
@@ -24,40 +24,53 @@
         <main>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <div class="wrapper">                              
+            <div class="barrederecherche">                              
                 <i class="iconegps fa-solid fa-location-dot"></i>
-                <input type="text" name="ville" value="Marseille, France"/>
-                <button class="buttonrecherche">Rechercher</button>
-                <button class="buttonloupe"><i class="iconeloupe fa-solid fa-magnifying-glass"></i></button>
+                <input class="zonetxt" type="text" name="ville" value="Marseille, France"/>
+                <button class="buttonrecherche">
+                    <div class="recherche">Rechercher</div>
+                    <i class="iconeloupe fa-solid fa-magnifying-glass"></i>
+                </button>   
             </div>
             <p class="filtre">
                 <span class="titre">Filtres</span>
                 <span class="unitebutton">
-                    <button class="buttonfiltre"><i class="iconefiltre fa-solid fa-money-bill-wave"></i>Economique</button>
-                    <button class="buttonfiltre"><i class="iconefiltre fa-solid fa-child-reaching"></i>Familial</button>
-                    <button class="buttonfiltre"><i class="iconefiltre fa-solid fa-heart"></i>Romantique</button>
-                    <button class="buttonfiltre"><i class="iconefiltre fa-solid fa-dog"></i>Animaux autorisés</button>
+                    <button class="buttonfiltre">
+                        <i class="iconefiltre fa-solid fa-money-bill-wave"></i>
+                        <span class="nomfiltre">Economique</span>
+                    </button>
+                    <button class="buttonfiltre">
+                        <i class="iconefiltre fa-solid fa-child-reaching"></i>
+                        <span class="nomfiltre">Familial</span>
+                    </button>
+                    <button class="buttonfiltre">
+                        <i class="iconefiltre fa-solid fa-heart"></i>
+                        <span class="nomfiltre">Romantique</span>
+                    </button>
+                    <button class="buttonfiltre">
+                        <i class="iconefiltre fa-solid fa-dog"></i>
+                        <span class="nomfiltre">Animaux autorisés</span>
+                    </button>
                 </span>
             </p>
             <p><img src="./assets/I.png" alt="info" class="iconeinfo"> Plus de 500 logements sont disponibles dans cette ville</p>
-        </main>
-        <!--
-        <section>   
-            <a name="heberg"><h2>Hébergements à Marseille<h2></a>
-            <div class="card">
-                <a href="#">
-                    <div class="card-image"><img src="./assets/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="La Cannebière"></div>
-                    <div class="card-body">
-                        <div class="card-title">
-                            <h3>Auberge La Cannebière</h3>
+            <section>   
+                <a name="heberg" class="heberg"><h2>Hébergements à Marseille<h2></a>
+                <div class="card">
+                    <a href="#">
+                        <div class="card-img"><img src="./assets/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="La Cannebière"></div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3>Auberge La Cannebière</h3>
+                            </div>
+                            <div class="card-txt">
+                                <p>Nuit à partir de 25euros + notes</p>
+                            </div>
                         </div>
-                        <div class="card-exercpt">
-                            <p>Nuit à partir de 25euros + notes</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </section>
-        -->
+                    </a>
+                    <p>ewsxrdctvfgyb</p>
+                </div> 
+            </section>          
+        </main>   
     </body>
 </html>
