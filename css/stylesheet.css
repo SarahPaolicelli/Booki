@@ -13,6 +13,7 @@
     }
     h3{
         font-size: 15px;
+        margin-bottom: 0px;
     }
     p{
     margin-top: 6px;
@@ -136,6 +137,12 @@
     }
 
 /*Card Hébergements à Marseille*/
+
+    .lescards{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
     .card{
     width: 215px;
     height:170px;
@@ -143,22 +150,35 @@
     overflow: hidden;
     Border: solid 5px white;
     border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
     .card-img{
-    height: 100px;
+    height: 103px;
     position: relative;
     overflow: hidden;
     }
     .card-img img{
         width: 100%;
-
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
     }
     .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        background-color:darkgoldenrod;
     }
-    .card-body {
-    padding: 2px;
-    
+    .card-body{
+        margin-left: 5px;
+    }
+    .card-body p{
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    }
+    .star{
+        color: #0065FC;
+    }
+    .nul{
+        color: #F2F2F2;
     }
 
 
