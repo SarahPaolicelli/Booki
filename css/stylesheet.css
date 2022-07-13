@@ -179,6 +179,8 @@
     Border: solid 5px white;
     border-radius: 15px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    text-decoration-line: none;
+    color: black;
     }
     .card-img{
     height: 103px;
@@ -204,7 +206,7 @@
     flex-direction: column;
     align-content: space-between;
     }
-    .card-body p{
+    .card-body p, .card-body-pop p{
     font-size:12px;
     margin-top: 2px;
     margin-bottom: 2px;
@@ -218,25 +220,60 @@
 
 /*Card Les plus populaires*/
 
-.lescartspop{
+.lespop{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.lescardspop{
     display:flex;
     flex-direction: column;
-    align-content:space-around;
-    }
+    justify-content:space-between;
+    height: 450px;
+}
+
 .cardpop{
     display:flex;
     flex-direction: row;
-    width: 290px;
-    height:120px;
+    /*width: 290px;
+    height:120px; */
     background-color: white;
     overflow: hidden;
     Border: solid 5px white;
     border-radius: 15px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    text-decoration-line: none;
+    color: black;
     }
+
 .cardpop:hover {
     background-color:darkgoldenrod;
     }
+.card-img-pop{
+    height: 120px;
+    width: 110px;
+    position: relative;
+    overflow: hidden;
+    }
+.card-img-pop img{
+    width: 150%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    }
+    .card-body-pop{
+    width: 150px;
+    margin-left: 15px;
+    }
+.contenu{
+    height: 67px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+   
+}
 
 
 /* media queries */
@@ -247,10 +284,7 @@
 }
 
 @media all and (max-width:768px)
-{   body{
-    margin-left:20px;
-    margin-right: 20px;
-    }
+{ 
     H1{
     font-size: 150%;
     }
