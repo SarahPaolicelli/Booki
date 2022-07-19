@@ -273,6 +273,14 @@
    
 }
 
+/*Activités à Marseille */
+
+.activ{
+    display:flex;
+    justify-content: space-between;
+}
+
+
 
 /* media queries */
 
