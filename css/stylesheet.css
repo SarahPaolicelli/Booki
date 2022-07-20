@@ -591,9 +591,19 @@ footer{
     }
     .activ{
         flex-direction:column;
+        justify-content: space-between;
     }
     .vieux, .fort, .frioul, .calanques, .garde, .longchamp{
         height: 190px;
+        margin-bottom: 25px;
+        padding: 20px 35px 20px 35px;
+    }
+    article2{
+        background: none;
+        width: auto;
+        height: auto;
+        margin-top: 0px;
+        margin-left: 0px;
     }
 }
 
