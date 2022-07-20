@@ -39,7 +39,6 @@
         border-top: 2px solid #0065FC ;
         color:#0065FC;
         padding-top: 50px;
-
     }
     .menu{
     display: flex; 
@@ -158,6 +157,7 @@
     display:flex;
     justify-content:space-around;
     flex-direction: row;
+    margin-bottom: 50px;
 
     }
 
@@ -253,18 +253,18 @@
     position: relative;
     overflow: hidden;
     }
-.card-img-pop img{
-    width: 150%;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    }
-    .card-body-pop{
+    .card-img-pop img{
+        width: 150%;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        }
+.card-body-pop{
     width: 150px;
     margin-left: 15px;
-    }
+}
 .contenu{
     height: 67px;
     display: flex;
@@ -275,12 +275,216 @@
 
 /*Activités à Marseille */
 
+#acti{
+    margin-left:50px;
+}
+
 .activ{
     display:flex;
     justify-content: space-between;
+    margin-left: 50px;
+    margin-right:15px;
+    margin-bottom:50px;
+}
+.vieux{
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    text-decoration-line: none;
+    color: black;
+}
+.vieux:hover {
+    background-color:darkgoldenrod;
+    }
+    .card-img-vieux{
+        height: 340px;
+        width: 270px;
+        position: relative;
+        overflow: hidden;
+        }
+    .card-img-vieux img{
+        width: 220%;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        }
+
+.fort{
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    text-decoration-line: none;
+    color: black;
+    }
+.fort:hover {
+    background-color:darkgoldenrod;
+    }
+    .card-img-fort{
+        height: 150px;
+        width: 270px;
+        position: relative;
+        overflow: hidden;
+    }
+    .card-img-fort img{
+        width: 100%;
+        position: absolute;
+        top:60%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+
+.frioul{
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    text-decoration-line: none;
+    color: black;
+    }
+.frioul:hover {
+    background-color:darkgoldenrod;
+    }
+    .card-img-frioul{
+        height: 100px;
+        width: 270px;
+        position: relative;
+        overflow: hidden;
+        }
+    .card-img-frioul img{
+        width: 100%;
+        position: absolute;
+        top:70%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        }
+
+.calanques{
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    text-decoration-line: none;
+    color: black;
+    }
+.calanques:hover {
+    background-color:darkgoldenrod;
+    }
+    .card-img-calanques{
+        height: 340px;
+        width: 270px;
+        position: relative;
+        overflow: hidden;
+        }
+    .card-img-calanques img{
+        width: 200%;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        }
+
+.colonne2{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.garde{
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    text-decoration-line: none;
+    color: black;
+}
+.garde:hover {
+    background-color:darkgoldenrod;
+    }
+    .card-img-garde{
+    height: 120px;
+    width: 270px;
+    position: relative;
+    overflow: hidden;
+    }
+    .card-img-garde img{
+    width: 100%;
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    }
+
+.longchamp{
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    text-decoration-line: none;
+    color: black;
+    }
+.longchamp:hover {
+    background-color:darkgoldenrod;
+    }
+    .card-img-longchamp{
+        height: 135px;
+        width: 270px;
+        position: relative;
+        overflow: hidden;
+        }
+    .card-img-longchamp img{
+        width: 100%;
+        position: absolute;
+        top:65%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        }
+.card-body-activ{
+    margin-left: 15px;
+    margin-top: 10px;
+    height:40px;
 }
 
 
+
+
+/* footer */
+footer{
+    background-color: #F2F2F2;
+    display:flex;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+.apropos, .nosheberg, .assist{
+    width:33%;
+}
+.lienfooter{
+    text-decoration-line: none;
+    color: black;
+}
+.menufooter{
+    list-style: none;
+    padding-left: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
 
 /* media queries */
 
@@ -384,6 +588,12 @@
     .card-img{
         width:auto;
         height:120px;
+    }
+    .activ{
+        flex-direction:column;
+    }
+    .vieux, .fort, .frioul, .calanques, .garde, .longchamp{
+        height: 190px;
     }
 }
 
