@@ -275,6 +275,10 @@
 
 /*Activités à Marseille */
 
+.articleb{
+    background: none;
+}
+
 #acti{
     margin-left:50px;
 }
@@ -477,20 +481,42 @@ footer{
 .lienfooter{
     text-decoration-line: none;
     color: black;
+    padding-bottom: 20px;
 }
 .menufooter{
     list-style: none;
     padding-left: 0;
     display:flex;
     flex-direction: column;
-    justify-content: space-between; 
+    height: 100px;
+    
 }
 
 /* media queries */
 
 @media (min-width:769px) and (max-width:992px)
-{   
-    body{width:auto;}
+{   section{
+        flex-direction: column-reverse;
+    }
+    aside{
+        width:92%;
+        background: none;
+    }
+    .lescardspop{
+        flex-direction: row;
+        height:150px;  
+    }
+    .cardpop{
+        width: 30%;
+    }
+    article, aside{
+        border-radius: 0;
+    }
+    article {
+        margin-left:0px;
+        width: 92%;
+    }
+
 }
 
 @media all and (max-width:768px)
@@ -592,18 +618,34 @@ footer{
     .activ{
         flex-direction:column;
         justify-content: space-between;
+        margin-left: 35px;
+        margin-right: 35px;
     }
     .vieux, .fort, .frioul, .calanques, .garde, .longchamp{
-        height: 190px;
         margin-bottom: 25px;
-        padding: 20px 35px 20px 35px;
+        width:100%;
+        height:170px;
     }
-    article2{
-        background: none;
-        width: auto;
-        height: auto;
+    .card-img-vieux, .card-img-fort, .card-img-frioul, .card-img-calanques, .card-img-garde, .card-img-longchamp{
+        width:auto;
+        height:120px;
+    }
+
+    .articleb{
+        background: none;     
         margin-top: 0px;
-        margin-left: 0px;
+    }
+    .card-body-activ{
+        height:20px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .menufooter{
+        height:auto;
+        width: auto;
+    }
+    .apropos, .nosheberg, .assist{
+        width:100%;
     }
 }
-
