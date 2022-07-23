@@ -25,32 +25,31 @@
     }
 
 /*header*/
+    header{
+        display: flex; 
+        justify-content: space-between;
+    }
     .logo{
-    margin-left: 12px;
-    margin-bottom: 22px;
-    height:40px;
-    }
+        margin-left: 12px;
+        height:40px;
+        }
     nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    }
-    .lienav:hover{
-        border-top: 2px solid #0065FC ;
-        color:#0065FC;
-        padding-top: 50px;
-    }
-    .menu{
-    display: flex; 
-    list-style: none;
-    font-size:14px;
-    }
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width:30%
+        }
+
     .lienav{
-    text-decoration-line: none;
-    color: black;
-    margin-right: 50px;
+        text-decoration-line: none;
+        color: black;
+        }
+        .lienav:hover{
+            border-top: 2px solid #0065FC ;
+            color:#0065FC;   
+        }
+   
     
-    }
 
 /*barre de recherche*/
     .barrederecherche{
@@ -472,24 +471,24 @@ footer{
     display:flex;
     flex-direction: row;
     padding-top: 40px;
-    padding-bottom: 50px;
     padding-left: 50px;
 }
-.apropos, .nosheberg, .assist{
+.menufooterp{
     width:33%;
 }
 .lienfooter{
     text-decoration-line: none;
     color: black;
-    padding-bottom: 20px;
 }
 .menufooter{
     list-style: none;
     padding-left: 0;
     display:flex;
     flex-direction: column;
-    height: 100px;
-    
+}
+
+.menufooter li{
+    margin-bottom: 8px;
 }
 
 /* media queries */
@@ -516,6 +515,10 @@ footer{
         margin-left:0px;
         width: 92%;
     }
+    .colonne2{
+        margin-left: 5px;
+        margin-right:5px;
+    }
 
 }
 
@@ -531,22 +534,24 @@ footer{
     }
     nav{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        width:100%;
     }  
-    nav li{
-        display:flex;
-        justify-content: center;
+    header{
+        flex-direction: column;
+        margin-left: 0;
     }
     .lienav{
     font-size: 15px;
     margin-top: 20px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #F2F2F2; 
+    border-bottom: 2px solid #F2F2F2;
+
     }
     .lienav:hover{
     border-top:none; 
     border-bottom:2px solid #0065FC;
-    padding-top: 0px;
+    padding-top: 50px;
     }
     p{
         font-size: 15px;
@@ -645,7 +650,7 @@ footer{
         height:auto;
         width: auto;
     }
-    .apropos, .nosheberg, .assist{
+    .menufooterp{
         width:100%;
     }
 }
